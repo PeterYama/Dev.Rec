@@ -6,6 +6,12 @@ import UserList from './pages/userList';
 import UserProfile from './pages/userProfile';
 import jobRegistration from './pages/jobRegistration';
 import { BrowserRouter, Route } from 'react-router-dom';
+import {PythonShell} from 'python-shell';
+ 
+PythonShell.run('ranking.py', null, function (err) {
+  if (err) throw err;
+  console.log('finished');
+});
 
 function App() {
   return (

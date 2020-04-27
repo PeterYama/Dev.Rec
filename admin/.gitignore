@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+# remove python dependencies
+/.venv
+
+# remove vs code
+/.vscode
+
 # testing
 /coverage
 
